@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../js/**/*.vue';
+
+@theme {
+    --color-brand-cream: #faf7f5;
+    --color-brand-burgundy: #8b263e;
+    --color-brand-burgundy-dark: #731e32;
+    --color-brand-blush: #dda7a5;
+    --color-brand-rose-gold: #c59b6d;
+    --color-brand-buff: #f3ece8;
+    --color-brand-ink: #2b2627;
+    --color-brand-muted: #6e6466;
+    --color-brand-border: #efe7e4;
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+    body {
+        background: var(--color-brand-cream);
+        color: var(--color-brand-ink);
+    }
+}
